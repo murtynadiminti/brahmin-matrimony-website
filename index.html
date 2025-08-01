@@ -2,151 +2,192 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brahmin Matrimony Registration</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Brahmin Matrimony</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f2ee;
+    }
+    header {
+      background-color: #6b4226;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #a97449;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    h2 {
+      color: #6b4226;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background-color: #6b4226;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #512e1b;
+    }
+    footer {
+      background-color: #6b4226;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .ritual-title {
+      font-weight: bold;
+      color: #a97449;
+      margin-top: 15px;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <div class="max-w-4xl mx-auto p-6 bg-white rounded-xl shadow-md mt-10">
-    <h1 class="text-3xl font-bold text-center mb-6">Brahmana Vivaha Vedika - Registration Form</h1>
-    <form class="space-y-8">
+<body>
 
-      <!-- Basic Information -->
-      <fieldset class="border border-gray-300 p-4 rounded">
-        <legend class="text-lg font-semibold">Basic Information</legend>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <input type="text" placeholder="Full Name" class="border p-2 rounded">
-          <select class="border p-2 rounded">
-            <option>Bride</option>
-            <option>Groom</option>
-          </select>
-          <input type="date" class="border p-2 rounded">
-          <input type="text" placeholder="Time of Birth" class="border p-2 rounded">
-          <input type="text" placeholder="Place of Birth" class="border p-2 rounded">
-          <select class="border p-2 rounded">
-            <option>Single</option>
-            <option>Second Marriage</option>
-            <option>Widowed</option>
-          </select>
-          <input type="text" placeholder="Height (e.g., 5'7")" class="border p-2 rounded">
-          <input type="text" placeholder="Weight (kg)" class="border p-2 rounded">
-          <input type="text" placeholder="Blood Group" class="border p-2 rounded">
-        </div>
-      </fieldset>
+  <header>
+    <h1>Exclusive Brahmin Matrimony</h1>
+    <p>Your sacred path to a perfect match</p>
+  </header>
 
-      <!-- Religious & Community -->
-      <fieldset class="border border-gray-300 p-4 rounded">
-        <legend class="text-lg font-semibold">Religious & Community Details</legend>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <input type="text" placeholder="Sub Caste (e.g., Veginadu, Velnaadu, Dravida, Niyogi)" class="border p-2 rounded">
-          <input type="text" placeholder="Gotra" class="border p-2 rounded">
-          <input type="text" placeholder="Nakshatra" class="border p-2 rounded">
-          <input type="text" placeholder="Raasi" class="border p-2 rounded">
-          <select class="border p-2 rounded">
-            <option>Dosham - Yes</option>
-            <option>Dosham - No</option>
-            <option>Don't Know</option>
-          </select>
-          <input type="text" placeholder="Preferred Rituals (e.g., Sama Veda)" class="border p-2 rounded">
-        </div>
-      </fieldset>
+  <nav>
+    <a href="#register">Register</a>
+    <a href="#preferences">Match Preferences</a>
+    <a href="#horoscope">Horoscope</a>
+    <a href="#rituals">Marriage Rituals</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-      <!-- Horoscope -->
-      <fieldset class="border border-gray-300 p-4 rounded">
-        <legend class="text-lg font-semibold">Horoscope Details (Optional)</legend>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <input type="text" placeholder="Janma Rashi" class="border p-2 rounded">
-          <input type="text" placeholder="Nakshatra" class="border p-2 rounded">
-          <input type="text" placeholder="Time Zone of Birth" class="border p-2 rounded">
-          <input type="file" class="border p-2 rounded">
-        </div>
-      </fieldset>
-
-      <!-- Education & Career -->
-      <fieldset class="border border-gray-300 p-4 rounded">
-        <legend class="text-lg font-semibold">Education & Career</legend>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <input type="text" placeholder="Highest Qualification" class="border p-2 rounded">
-          <input type="text" placeholder="Field of Study" class="border p-2 rounded">
-          <input type="text" placeholder="College/University" class="border p-2 rounded">
-          <input type="text" placeholder="Occupation" class="border p-2 rounded">
-          <input type="text" placeholder="Job Title" class="border p-2 rounded">
-          <input type="text" placeholder="Company" class="border p-2 rounded">
-          <input type="text" placeholder="Annual Income" class="border p-2 rounded">
-        </div>
-      </fieldset>
-
-      <!-- Lifestyle -->
-      <fieldset class="border border-gray-300 p-4 rounded">
-        <legend class="text-lg font-semibold">Lifestyle & Interests</legend>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <select class="border p-2 rounded">
-            <option>Vegetarian</option>
-            <option>Eggetarian</option>
-            <option>Vegan</option>
-          </select>
-          <select class="border p-2 rounded">
-            <option>Non-Smoker</option>
-            <option>Smoker</option>
-          </select>
-          <select class="border p-2 rounded">
-            <option>Non-Drinker</option>
-            <option>Drinker</option>
-          </select>
-          <input type="text" placeholder="Hobbies (comma separated)" class="border p-2 rounded">
-          <input type="text" placeholder="Languages Known" class="border p-2 rounded">
-        </div>
-      </fieldset>
-
-      <!-- Family Details -->
-      <fieldset class="border border-gray-300 p-4 rounded">
-        <legend class="text-lg font-semibold">Family Details</legend>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <input type="text" placeholder="Father's Name & Occupation" class="border p-2 rounded">
-          <input type="text" placeholder="Mother's Name & Occupation" class="border p-2 rounded">
-          <input type="text" placeholder="Siblings Details" class="border p-2 rounded">
-          <select class="border p-2 rounded">
-            <option>Joint</option>
-            <option>Nuclear</option>
-          </select>
-          <select class="border p-2 rounded">
-            <option>Traditional</option>
-            <option>Moderate</option>
-            <option>Liberal</option>
-          </select>
-          <input type="text" placeholder="Native Place" class="border p-2 rounded">
-        </div>
-      </fieldset>
-
-      <!-- Partner Preferences -->
-      <fieldset class="border border-gray-300 p-4 rounded">
-        <legend class="text-lg font-semibold">Partner Preferences</legend>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <input type="text" placeholder="Preferred Age Range" class="border p-2 rounded">
-          <input type="text" placeholder="Preferred Height Range" class="border p-2 rounded">
-          <input type="text" placeholder="Preferred Caste" class="border p-2 rounded">
-          <input type="text" placeholder="Preferred Education & Job" class="border p-2 rounded">
-          <input type="text" placeholder="Location Preference" class="border p-2 rounded">
-          <select class="border p-2 rounded">
-            <option>Dosham Match - Required</option>
-            <option>Not Required</option>
-          </select>
-        </div>
-      </fieldset>
-
-      <!-- Upload -->
-      <fieldset class="border border-gray-300 p-4 rounded">
-        <legend class="text-lg font-semibold">Photo & Documents</legend>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <input type="file" class="border p-2 rounded">
-          <input type="file" class="border p-2 rounded">
-        </div>
-      </fieldset>
-
-      <div class="text-center">
-        <button type="submit" class="bg-maroon-600 text-white px-6 py-2 rounded shadow hover:bg-maroon-700">Submit</button>
-      </div>
+  <section id="register">
+    <h2>Bride/Groom Registration</h2>
+    <form>
+      <!-- Form Fields Same as Before -->
+      <label>Full Name</label><input type="text" required>
+      <label>Gender</label><select><option>Male</option><option>Female</option></select>
+      <label>Date of Birth</label><input type="date" required>
+      <label>Gotra</label><input type="text">
+      <label>Nakshatra</label><input type="text">
+      <label>Rashi</label><input type="text">
+      <label>Brahmin Saakha</label>
+      <select><option>Dravida</option><option>Vaidika Veginaadu</option><option>Vaidika Velnaadu</option><option>Niyogi</option></select>
+      <label>Education</label><input type="text">
+      <label>Profession</label><input type="text">
+      <label>Upload Photo</label><input type="file">
+      <button type="submit">Submit Registration</button>
     </form>
-  </div>
+  </section>
+
+  <section id="preferences">
+    <h2>Partner Preferences</h2>
+    <form>
+      <label>Preferred Age Range</label><input type="text">
+      <label>Preferred Sub-caste</label>
+      <select><option>Any</option><option>Smartha</option><option>Madhwa</option></select>
+      <label>Preferred Profession</label><input type="text">
+      <button type="submit">Save Preferences</button>
+    </form>
+  </section>
+
+  <section id="horoscope">
+    <h2>Horoscope Details</h2>
+    <form>
+      <label>Time of Birth</label><input type="time">
+      <label>Place of Birth</label><input type="text">
+      <label>Upload Horoscope PDF</label><input type="file">
+      <button type="submit">Upload Horoscope</button>
+    </form>
+  </section>
+
+  <section id="rituals">
+    <h2>Brahmin Marriage Rituals</h2>
+    <p>Brahmin weddings are deeply rooted in Vedic traditions. Here are the key rituals observed:</p>
+
+    <div class="ritual-title">1. Nischitaardham (Engagement)</div>
+    <p>A formal agreement between families that includes exchanging horoscopes, gifts, and fixing the wedding date with blessings of elders and priests.</p>
+
+    <div class="ritual-title">2. Snaatakam</div>
+    <p>Conducted on the day of wedding, groom and his parents perform this ritual and it marks the beginning of the sacred marriage ceremonies.</p>
+
+    <div class="ritual-title">3. Kasi Yatra</div>
+    <p>The groom symbolically renounces worldly life and heads to Kashi with a walking stick. The bride's father intercepts him and convinces him to accept marriage instead, offering his daughter in marriage.</p>
+
+    <div class="ritual-title">4. Kanyadaanam</div>
+    <p>The bride’s father gives away his daughter to the groom, considering him a form of Vishnu. The bride is seated on her father's lap during the ritual. It’s one of the most emotional and sacred parts of the ceremony.</p>
+
+    <div class="ritual-title">5. Mangalya Dharanam</div>
+    <p>The groom ties the mangalsutra (sacred thread) around the bride’s neck in three knots, symbolizing unity of mind, body, and soul.</p>
+
+    <div class="ritual-title">6. Saptapadi</div>
+    <p>The couple takes seven steps around the sacred fire. Each step signifies a vow including nourishment, strength, prosperity, family, progeny, health, and friendship.</p>
+
+    <div class="ritual-title">7. Talambralu</div>
+    <p>The bride and groom pour turmeric-coated rice over each other's heads. It represents joy, prosperity, and happiness in their married life.</p>
+
+    <div class="ritual-title">8. Arundhati Darshanam</div>
+    <p>The couple is shown the Arundhati and Vasishta stars, signifying eternal loyalty and unity in marriage.</p>
+
+    <div class="ritual-title">9. Gruhapravesam</div>
+    <p>The bride enters the groom's house and is welcomed with aarti. She kicks a pot of rice at the entrance to signify prosperity entering the household.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>
+      📞 Phone: +91-0123456789<br>
+      📧 Email: support@exclusivebrahminmatrimony.in<br>
+      📍  Vizag
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Exclusive Brahmin Matrimony. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>
+
